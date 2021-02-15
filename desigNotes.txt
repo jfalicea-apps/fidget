@@ -1,0 +1,9 @@
+button work flow: 
+1. authenticate from the button 
+2. query the user's button definitions
+  2a. store query results in a server-local variable 
+3.
+4.
+5. 
+6. 
+7. 
