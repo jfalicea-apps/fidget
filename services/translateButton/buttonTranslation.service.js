@@ -7,10 +7,10 @@ const buttonService = {
     const originalFidgetValue = fidgetValue;
     switch (fidgetValue) {
       case 0:
-        fidgetValue = 'ok';
+        fidgetValue = 'happy';
         break;
       case 1:
-        fidgetValue = 'happy';
+        fidgetValue = 'worried';
         break;
       case 2:
         fidgetValue = 'sad';
