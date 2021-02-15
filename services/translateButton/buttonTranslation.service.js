@@ -7,13 +7,13 @@ const buttonService = {
     const originalFidgetValue = fidgetValue;
     switch (fidgetValue) {
       case 0:
-        fidgetValue = 'sad';
-        break;
-      case 1:
         fidgetValue = 'ok';
         break;
-      case 2:
+      case 1:
         fidgetValue = 'happy';
+        break;
+      case 2:
+        fidgetValue = 'sad';
         break;
       default:
         return { status: 401, msg: 'you sent an invalid value' };
