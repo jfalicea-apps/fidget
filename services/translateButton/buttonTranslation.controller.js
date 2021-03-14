@@ -1,4 +1,3 @@
-const db = require('../../db');
 const { insertNewEmotionService } = require('./buttonTranslation.service');
 const buttonController = {
   insertNewEmote: async function (req, res, next) {

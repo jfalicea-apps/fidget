@@ -1,6 +1,9 @@
 const userQueries = {
-  newUserInsertQuery: `INSERT INTO users (fullname, email, userkey,password) VALUES ($1,$2,$3,$4) returning userkey`,
+  intakeform: `INSERT INTO users ("fullname","firstName", "lastName", "email", "userkey","password", "address1", "address2", "city", "state" ,"zipCode", "dateOfBirth", "agreedTOC", "genderOrIdentity", "educationalLevel") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15) returning id`,
   getSingleUser: `SELECT email, id FROM users WHERE email = $1`,
+  deactiveUser: `UPDATE users SET "isActive" = false WHERE "id"=$1 returning "isActive";`,
+  getUserHash: `SELECT "password" FROM users WHERE id=$1`,
+  deleteUser: `DELETE FROM users WHERE "id"=$1`,
 };
 
 const securityCheckQueries = {
